@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: antiquewhite;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>calculation</h1>
+
+    <p id="myText">Hello, this is some text.</p>
+<button onclick="hideText()">Hide Text</button>
+
+
+    <h2 id="change_name">what is your name?</h2>
+    <button onclick="changefunction()">change btn</button>
+    
+    <br><br>
+
+    
+        <label for="add">add</label>
+        <input type="number" id="first_num">
+        <label for="">+</label>
+        <input type="number" id="second_num">
+        <button onclick="addfunction()">submit</button>
+        <br><br>
+        <label for="subtract">subtract</label>
+        <input type="number" id="third_num">
+        <label for="">-</label>
+        <input type="number" id="four_num">
+        <button onclick="subtractfunction()">submit</button>
+        <br><br>
+        <label for="multiple">multiple</label>
+        <input type="number" id="five_num">
+        <label for="">*</label>
+        <input type="number" id="six_num">
+        <button onclick="multiplefunction()">submit</button>
+        <br><br>
+        <label for="divison">divison</label>
+        <input type="number" id="seven_num">
+        <label for="">/</label>
+        <input type="number" id="eight_num">
+        <button onclick="divisonfunction()">submit</button>
+        <br><br>
+        <label for="percentage">percentage</label>
+        <input type="number" id="nine_num">
+        <label for="">%</label>
+        <input type="number" id="ten_num">
+        <button onclick="percentagefunction()">submit</button>
+        <br><br>
+  
+    
+    <script>
+
+      function hideText() {
+    document.getElementById("myText").style.visibility = "hidden";
+}
+
+
+
+
+      function changefunction(){
+        console.log("change function called");
+        document.getElementById("change_name").innerText=" my anme is a siddhant burman";
+        
+
+        
+      }
+         function addfunction() {
+        console.log("Addition function called");
+        let num1 = document.getElementById("first_num").value;
+        let num2 = document.getElementById("second_num").value;
+        console.log(typeof num1);
+        console.log(typeof num2);
+        console.log(Number(num1) + Number(num2));
+        
+      }
+         function subtractfunction() {
+        console.log(" Subtraction function called");
+        let num3 = document.getElementById("third_num").value;
+        let num4 = document.getElementById("four_num").value;
+        console.log(typeof num3);
+        console.log(typeof num4);
+        console.log(Number(num3) - Number(num4));
+        
+      }
+         function multiplefunction() {
+        console.log(" Multiplication function called");
+        let num5 = document.getElementById("five_num").value;
+        let num6 = document.getElementById("six_num").value;
+        console.log(typeof num5);
+        console.log(typeof num6);
+        console.log(Number(num5) * Number(num6));
+        
+      }
+         function divisonfunction() {
+        console.log("Divison function called");
+        let num7 = document.getElementById("seven_num").value;
+        let num8 = document.getElementById("eight_num").value;
+        console.log(typeof num7);
+        console.log(typeof num8);
+        console.log(Number(num7) / Number(num8));
+        
+      }
+         function percentagefunction() {
+        console.log("Percentage function called");
+        let value1 = document.getElementById("nine_num").value;
+        let percent = document.getElementById("ten_num").value;
+        console.log(typeof value1);
+        console.log(typeof percent);
+         percent = parseFloat(percent);
+        console.log( Number(value1* percent) / Number(100));
+        
+      }
+
+      let str= "my name is a siddhant burman";
+      let temp =`my name is a siddhant ${age= 18}`;
+      console.log(temp);
+      console.log(temp.length);
+      console.log(temp.charCodeAt(6));
+      console.log(temp.charAt(6));
+
+      const name = "siddhant , anshi , daksh";
+      let letter = name[4];
+      console.log(letter);
+      let a = name.substr(3,10);
+      console.log(a);
+      
+      
+      
+      
+      
+      
+    </script>
+</body>
+</html>
